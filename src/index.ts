@@ -88,15 +88,20 @@ class RRvideo {
     try {
       this.browser = await puppeteer.launch({
         headless: this.config.headless,
-        args: ['--disable-dev-shm-usage', '--no-sandbox', '--disable-setuid-sandbox', '--shm-size=2gb']
+        args: [
+          "--disable-dev-shm-usage",
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--shm-size=2gb",
+        ],
         /* DISABLE SANDBOX:
         CHANGE USER DOESN'T WORKS 'Failed to move to new namespace:' */
       });
-      
+
       this.page = await this.browser.newPage();
 
       /* DISABLE NAVIGATION TIME OUT      
-      await this.page.setDefaultNavigationTimeout(0); */ 
+      await this.page.setDefaultNavigationTimeout(0); */
 
       await this.page.goto("about:blank");
 
@@ -137,7 +142,6 @@ class RRvideo {
       "-framerate",
       this.config.fps.toString(),
       // input
-      "-re",
       "-f",
       "image2pipe",
       "-i",
