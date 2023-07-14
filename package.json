@@ -1,6 +1,6 @@
 {
-  "name": "@hop-tran/rrvideo-fix-puppeteer",
-  "version": "0.2.8",
+  "name": "@lavshah/rrvideo-fix",
+  "version": "0.2.15",
   "description": "transform rrweb session into video",
   "main": "build/index.js",
   "bin": {
@@ -27,7 +27,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hop-Tran/rrvideo.git"
+    "url": "git+https://github.com/lavshah-turing/rrvideo-fix.git"
   },
   "keywords": [
     "rrvideo",
@@ -37,7 +37,7 @@
     "fix"
   ],
   "bugs": {
-    "url": "https://github.com/Hop-Tran/rrvideo/issues"
+    "url": "https://github.com/lavshah-turing/rrvideo/issues"
   },
-  "homepage": "https://github.com/Hop-Tran/rrvideo#readme"
+  "homepage": "https://github.com/lavshah-turing/rrvideo-fix#readme"
 }
